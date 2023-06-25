@@ -1,34 +1,77 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Flataculties</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Flatacuties</h1>
-  <div class="container">
-    <div class="list-container">
-      <h2>Animal Names</h2>
-      <ul id="animals-list"></ul>
-    </div>
-    <div class="details-container">
-      <h2>Animal Details</h2>
-      <div id="animal-details"></div>
-      <button id="vote-btn">Vote</button>
-    </div>
-  </div>
-  <div class="container">
-    <button id="reset-btn">Reset Votes</button>
-    <form id="add-form">
-      <h2>Add Animal</h2>
-      <label for="name-input">Name:</label>
-      <input type="text" id="name-input" required>
-      <label for="image-input">Image URL:</label>
-      <input type="url" id="image-input" required>
-      <button type="submit">Add</button>
-    </form>
-  </div>
-  <script src="index.js"></script>
-</body>
-</html>
+body{
+  background-color: #0b74ad;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  float: left;
+  width: 30%;
+  margin-right: 10%;
+}
+li {
+  cursor: pointer;
+  background-color: #415857;
+  color: #fff;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+li:hover {
+  background-color: #296b60;
+}
+.animal-card {
+  display: none;
+  background-color: #e7d481;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ac6c9b;
+  margin: 10px;
+  float: right;
+  width: 350px;
+  height: 400px;
+  position: relative;
+}
+.active {
+  display: block;
+}
+img {
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+button {
+  background-color: #011638;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right-bottom;
+  position: absolute;  
+  bottom: 0;          
+  right: 0;
+  margin: 5px;
+}
+button:hover {
+  background-color: #008b8b;
+}
+
+
