@@ -1,11 +1,11 @@
-// This URL shows where the anamiamls is fetched
+// This URL shows where the animals are fetched
 const URL = "http://localhost:3000/characters";
 
 // Fetch animals from the URL
 function fetchAnimals() {
   fetch(URL)
-    .then(res => res.json())
-    .then(data => renderAnimals(data));
+    .then((res) => res.json())
+    .then((data) => renderAnimals(data));
 }
 
 // Render the animals on the page
@@ -13,7 +13,7 @@ function renderAnimals(data) {
   const ul = document.getElementById("animals");
   const div = document.getElementById("card");
 
-  data.forEach(animal => {
+  data.forEach((animal) => {
     const li = document.createElement("li");
     li.innerHTML = animal.name;
 
