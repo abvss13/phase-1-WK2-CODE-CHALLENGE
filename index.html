@@ -2,33 +2,41 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Flataculties</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Flatacuties</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <h1>Flatacuties</h1>
-  <div class="container">
-    <div class="list-container">
-      <h2>Animal Names</h2>
+  
+  <div id="container">
+    <div id="animals">
+      <h2>Animals</h2>
       <ul id="animals-list"></ul>
     </div>
-    <div class="details-container">
+
+    <div id="animal-details">
       <h2>Animal Details</h2>
-      <div id="animal-details"></div>
-      <button id="vote-btn">Vote</button>
+    </div>
+
+    <div id="controls">
+      <button id="vote-button" disabled>Vote</button>
+      <button id="reset-button">Reset Votes</button>
+    </div>
+
+    <div id="add-animal">
+      <h2>Add Animal</h2>
+      <form id="add-animal-form">
+        <label for="animal-name">Name:</label>
+        <input type="text" id="animal-name" required>
+
+        <label for="animal-image">Image URL:</label>
+        <input type="text" id="animal-image" required>
+
+        <button type="submit">Add</button>
+      </form>
     </div>
   </div>
-  <div class="container">
-    <button id="reset-btn">Reset Votes</button>
-    <form id="add-form">
-      <h2>Add Animal</h2>
-      <label for="name-input">Name:</label>
-      <input type="text" id="name-input" required>
-      <label for="image-input">Image URL:</label>
-      <input type="url" id="image-input" required>
-      <button type="submit">Add</button>
-    </form>
-  </div>
+
   <script src="index.js"></script>
 </body>
 </html>

@@ -1,77 +1,86 @@
-body{
-  background-color: #0b74ad;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-div {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+h1 {
+  text-align: center;
+}
+
+#container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 5px;
-  float: left;
-  width: 30%;
-  margin-right: 10%;
+
+#animals,
+#animal-details,
+#controls,
+#add-animal {
+  flex: 1 1 300px;
 }
-li {
-  cursor: pointer;
-  background-color: #415857;
-  color: #fff;
-  padding: 5px;
-  margin: 10px 0;
-  border-radius: 5px;
+
+#animal-details h2,
+#controls h2,
+#add-animal h2 {
+  margin-top: 0;
 }
-li:hover {
-  background-color: #296b60;
-}
-.animal-card {
-  display: none;
-  background-color: #e7d481;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #ac6c9b;
-  margin: 10px;
-  float: right;
-  width: 350px;
-  height: 400px;
-  position: relative;
-}
-.active {
-  display: block;
-}
-img {
-  float: left;
-  margin: 10px;
-  border-radius: 10px;
-  height: 300px;
-  width: 200px;
-}
-h2 {
-  margin: 0;
+
+#animals-list {
+  list-style-type: none;
   padding: 0;
 }
 
+#animals-list li {
+  cursor: pointer;
+}
 
+#animals-list li:hover {
+  font-weight: bold;
+}
 
-button {
-  background-color: #011638;
+#animal-details {
+  text-align: center;
+}
+
+#animal-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#add-animal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#add-animal-form label {
+  font-weight: bold;
+}
+
+#add-animal-form input[type="text"] {
+  padding: 5px;
+}
+
+#add-animal-form button {
+  background-color: #008b8b;
   color: #fff;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  float: right-bottom;
-  position: absolute;  
-  bottom: 0;          
-  right: 0;
-  margin: 5px;
-}
-button:hover {
-  background-color: #008b8b;
 }
 
-
+#add-animal-form button:hover {
+  background-color: #011638;
+}

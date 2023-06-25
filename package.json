@@ -1,17 +1,19 @@
 {
-    "name": "flatacuties-app",
-    "version": "1.0.0",
-    "description": "Flatacuties Web App",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/abvss13/phase-1-WK2-CODE-CHALLENGE.git"
-    },
-    "license": "MIT",
-    "scripts": {
-      "start": "http-server"
-    },
-    "devDependencies": {
-      "http-server": "^0.12.3"
-    }
-  }
-  
+  "name": "wk2-code-challenge",
+  "version": "1.0.0",
+  "description": "Code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abvss13/phase-1-WK2-CODE-CHALLENGE.git"
+  },
+  "author": "Abdullahi Abass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abvss13/phase-1-WK2-CODE-CHALLENGE/issues"
+  },
+  "homepage": "https://github.com/abvss13/phase-1-WK2-CODE-CHALLENGE#readme"
+}
