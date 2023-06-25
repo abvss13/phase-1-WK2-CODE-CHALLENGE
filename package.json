@@ -1,0 +1,17 @@
+{
+    "name": "flatacuties-app",
+    "version": "1.0.0",
+    "description": "Flatacuties Web App",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/abvss13/phase-1-WK2-CODE-CHALLENGE.git"
+    },
+    "license": "MIT",
+    "scripts": {
+      "start": "http-server"
+    },
+    "devDependencies": {
+      "http-server": "^0.12.3"
+    }
+  }
+  
