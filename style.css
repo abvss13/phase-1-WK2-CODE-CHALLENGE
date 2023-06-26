@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: rgb(103, 109, 121);
 }
 
 h1 {
@@ -12,6 +13,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #57667e;
   gap: 20px;
 }
 
@@ -74,7 +76,7 @@ h1 {
 
 #add-animal-form button {
   background-color: #008b8b;
-  color: #fff;
+  color: #413636;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -82,5 +84,5 @@ h1 {
 }
 
 #add-animal-form button:hover {
-  background-color: #011638;
+  background-color: #225a2c;
 }
